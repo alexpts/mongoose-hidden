@@ -72,7 +72,7 @@ There are two methods: when creating the plugin and when attaching the plugin, a
 #### Method 1: constructor param
 
 ```javascript
-let mongooseHidden = require('mongoose-hidden')({ hidden: { _id: true, password: true } })
+let mongooseHidden = require('mongoose-hidden')({ defaultHidden: { _id: true, password: true } })
 UserSchema.plugin(mongooseHidden)
 ```
 
